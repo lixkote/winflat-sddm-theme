@@ -71,7 +71,6 @@ Item {
 
     Item {
         id: leftPanel
-        z: 9
 
         anchors {
             bottom: parent.bottom
@@ -99,7 +98,7 @@ Item {
             UserList {
                 id: userList
                 name: (model.realName === "") ? model.name : model.realName
-                icon: "/var/lib/AccountsService/icons/" + name
+                icon: "/var/lib/AccountsService/icons/" + model.name
 
                 anchors.verticalCenter: parent.verticalCenter
 
@@ -187,14 +186,13 @@ Item {
         enabled: listView2.count > 1 ? false : true
 
         Item {
-
             Component {
                 id: userDelegate
 
                 UserPanel {
                     anchors.centerIn: parent
                     name: (model.realName === "") ? model.name : model.realName
-                    icon: "/var/lib/AccountsService/icons/" + name
+                    icon: "/var/lib/AccountsService/icons/" + model.name
                 }
             }
 
