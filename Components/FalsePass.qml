@@ -3,7 +3,6 @@ import QtQuick.Controls 2.15
 import Qt5Compat.GraphicalEffects
 
 FocusScope {
-
     Image {
         source: "../Assets/dialog-error.png"
         anchors.right: falseText.left
@@ -66,6 +65,8 @@ FocusScope {
             switchUser.enabled = listView2.count > 1 ? true : false
 
             passwordField.text = ""
+
+            capsOn.z = capsOn.state === "on" ? 2 : -1
         }
 
         Keys.onReturnPressed: {
@@ -87,6 +88,8 @@ FocusScope {
             switchUser.enabled = listView2.count > 1 ? true : false
 
             passwordField.text = ""
+
+            capsOn.z = capsOn.state === "on" ? 2 : -1
         }
 
         Keys.onEnterPressed: {
@@ -108,6 +111,8 @@ FocusScope {
             switchUser.enabled = listView2.count > 1 ? true : false
 
             passwordField.text = ""
+
+            capsOn.z = capsOn.state === "on" ? 2 : -1
         }
     }
 }

@@ -3,7 +3,6 @@ import QtQuick.Controls 2.15
 import Qt5Compat.GraphicalEffects
 
 Rectangle {
-
     AnimatedImage {
         source: "../Assets/loading.gif"
 
@@ -13,6 +12,7 @@ Rectangle {
         anchors.right: text.left
         anchors.rightMargin: 2
         y: -18
+        z: 4
     }
 
     Text {
