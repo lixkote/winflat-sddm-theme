@@ -18,7 +18,7 @@ Item {
             contentItem: Text {
                 renderType: Text.NativeRendering
                 font.weight: Font.Normal
-                font.family: Qt.resolvedUrl("../fonts") ? "Segoe UI" : segoeui.name
+                font.family: "Ubuntu, Sans-Serif"
                 font.pointSize: 10
                 verticalAlignment: Text.AlignVCenter
                 color: "black"
@@ -129,7 +129,7 @@ Item {
 
             contentItem: Text {
                 text: "Session"
-                font.family: Qt.resolvedUrl("../fonts") ? "Segoe UI" : segoeui.name
+                font.family: "Ubuntu, Sans-Serif"
                 renderType: Text.NativeRendering
                 color: "white"
             }

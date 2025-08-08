@@ -10,28 +10,11 @@ Item {
     width: Screen.width
     height: Screen.height
 
-    FontLoader {
-        id: segoeui
-        source: Qt.resolvedUrl("fonts/segoeui.ttf")
-    }
-
-    FontLoader {
-        id: segoeuil
-        source: Qt.resolvedUrl("fonts/segoeuil.ttf")
-    }
-
     Rectangle {
         id: background
         anchors.fill: parent
         width: parent.width
         height: parent.height
-
-        MediaPlayer {
-            id: startupSound
-            autoPlay: true
-            source: Qt.resolvedUrl("Assets/Startup-Sound.wav")
-            audioOutput: AudioOutput {}
-        }
 
         Image {
             anchors.fill: parent
@@ -273,7 +256,7 @@ Item {
                         id: name
                         color: "white"
                         font.pointSize: 20
-                        font.family: Qt.resolvedUrl("../fonts") ? "Segoe UI" : segoeui.name
+                        font.family: "Ubuntu, Sans-Serif"
                         renderType: Text.NativeRendering
                         font.kerning: false
 
@@ -491,7 +474,7 @@ Item {
             Text {
                 text: "Switch user"
                 font.pointSize: 11.5
-                font.family: Qt.resolvedUrl("../fonts") ? "Segoe UI" : segoeui.name
+                font.family: "Ubuntu, Sans-Serif"
                 renderType: Text.NativeRendering
                 color: "white"
 

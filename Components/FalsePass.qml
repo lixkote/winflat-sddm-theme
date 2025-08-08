@@ -15,7 +15,7 @@ FocusScope {
         text: "The user name or password is incorrect."
         color: "white"
         font.pointSize: 10
-        font.family: Qt.resolvedUrl("../fonts") ? "Segoe UI" : segoeui.name
+        font.family: "Ubuntu, Sans-Serif"
         renderType: Text.NativeRendering
         x: -100
 

@@ -88,7 +88,7 @@ FocusScope {
         id: name
         color: "white"
         font.pointSize: 20
-        font.family: Qt.resolvedUrl("../fonts") ? "Segoe UI" : segoeui.name
+        font.family: "Ubuntu, Sans-Serif"
         renderType: Text.NativeRendering
         font.kerning: false
 
